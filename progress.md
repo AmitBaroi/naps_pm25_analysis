@@ -20,8 +20,8 @@ This document tracks the progress of the NAPS PM2.5 Data Analysis & Forecasting 
     - [x] Push initial project to GitHub
 
 - [ ] **Phase 1: Data Acquisition (PM2.5 data 2000-2023)**
-    - [ ] Identify Data Source & Download Method (NAPS website)
-    - [ ] Document download process in `notebooks/01_data_download.ipynb`
+    - [x] Identify Data Source & Download Method (NAPS website) - Data source identified: [https://dbeaudoinfortin.github.io/NAPSDataAnalysis/](https://dbeaudoinfortin.github.io/NAPSDataAnalysis/)
+    - [c] Document download process in `notebooks/01_data_download.ipynb` - Notebook created, pending download method details.
     - [ ] Download raw PM2.5 data for 2000-2023 into `data/raw/pm25/`
         - [ ] Automated download script (`src/data_loader.py`) (if feasible)
         - [ ] Manual download (if automation not feasible)
