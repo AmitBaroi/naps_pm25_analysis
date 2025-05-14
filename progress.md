@@ -19,15 +19,15 @@ This document tracks the progress of the NAPS PM2.5 Data Analysis & Forecasting 
     - [x] Update `README.md` (as needed)
     - [x] Push initial project to GitHub
 
-- [ ] **Phase 1: Data Acquisition (PM2.5 data 2000-2023)**
-    - [x] Identify Data Source & Download Method (NAPS website) - Data source identified: [https://dbeaudoinfortin.github.io/NAPSDataAnalysis/](https://dbeaudoinfortin.github.io/NAPSDataAnalysis/)
-    - [c] Document download process in `notebooks/01_data_download.ipynb` - Notebook created, pending download method details.
-    - [ ] Download raw PM2.5 data for 2000-2023 into `data/raw/pm25/`
-        - [ ] Automated download script (`src/data_loader.py`) (if feasible)
-        - [ ] Manual download (if automation not feasible)
-    - [ ] Log any download failures or missing files
-    - [ ] Data Selection Notes (Pollutant: PM2.5, Years: 2000-2023, Stations: All initially)
-    - [ ] Commit downloaded data (or script/manifest)
+- [c] **Phase 1: Data Acquisition (PM2.5 data 2000-2023)**
+    - [x] Data Source Identified: NAPS Data Downloader tool ([https://dbeaudoinfortin.github.io/NAPSDataAnalysis/](https://dbeaudoinfortin.github.io/NAPSDataAnalysis/))
+    - [c] Using provided single dataset: `data/raw/pm25/Continuous_PM2.5_50103_2023.csv`.
+    - [ ] ~~Document download process in `notebooks/01_data_download.ipynb`~~ (Skipped due to using provided data & tool issues)
+    - [x] Raw PM2.5 data (single file) in `data/raw/pm25/`
+    - [ ] ~~Automated download script (`src/data_loader.py`)~~ (Skipped)
+    - [ ] ~~Log any download failures or missing files~~ (N/A for single file)
+    - [x] Data Selection Notes: PM2.5, Year 2023, Site 50103 (Montreal - Saint Jean Baptiste)
+    - [ ] Commit downloaded data (or script/manifest) - *Pending: will commit the single file*
 
 - [ ] **Phase 2: Data Cleaning & Aggregation**
     - [ ] Load and Combine Data (from `data/raw/pm25/`)
